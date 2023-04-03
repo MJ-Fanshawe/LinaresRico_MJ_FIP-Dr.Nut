@@ -1,4 +1,4 @@
-![oops, image not found](images/logo-1.svg "Logo Dr.Nut")
+![oops, image not found](images/logo-1.png "Logo Dr.Nut")
 
 # Dr. Nut - Rebrand FIP
 
