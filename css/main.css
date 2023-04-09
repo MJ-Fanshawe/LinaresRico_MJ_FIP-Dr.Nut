@@ -1,24 +1,40 @@
+/* 
+    CSS Guide 
 
-/* Media */
+    1.  General Styles
+    2.  Main Nav
+    3.  Main Hero Image
+    4.  Main Hero Image Contact
+    5.  Why Couples Resort
+    6.  About & FAQ
+    7.  Contact Form
+    8.  Footer
+    9.  Custom Queries
+    10. Tablet Queries
+    11. Desktop Queries 
+ */
 
-@media screen and (min-width: 320px) {
-    #main-logo {
-        order: -1;
-    }
+
+ /* 1. ---General Styles--- */
+
+body {
+    color: #626262;
+    font-family: 'Poppins', sans-serif, serif;
 }
-
-
-@media screen and (min-width: 768px) {
-    #hero-txt-2 {
-        height: 50px;
-        margin-top: 80px;
-    }
+ 
+a {
+    text-decoration: none;
+    transition: all .5s ease-in-out;
 }
-
-@media screen and (min-width: 768px) {
-    #squirrel {
-   order: -1;
-    }
+ 
+input, textarea {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+ 
+.cr-red {
+    color: #9a2018;
 }
 
 /* General */
@@ -67,3 +83,595 @@ section {
 footer {
     background-color: #E96329;
 }
+
+
+/* 2. ---Main Nav--- */
+
+
+#sticky-nav-con {
+    border-bottom: solid 5px #862217;
+}
+
+#main-nav button {
+    width: 40px;
+    height: 40px;
+    background: url(../images/burger.svg) no-repeat center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    transition: all .5s ease;
+    border: 10px;
+    color: #862217;
+
+ }
+ 
+ #main-nav button.expanded {
+    transform: rotate(180deg);
+    background: url(../images/x.svg) no-repeat center;
+ }
+ 
+ #burger-con {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    display: none;
+ }
+ 
+ #burger-con.slide-toggle {
+    display: block;
+ }
+
+ #burger-menu {
+    padding-top: 20px;
+ }
+
+#burger-menu li img{
+    width: 180px;
+    margin-top: 8px;
+}
+
+ 
+ #main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+ }
+ 
+ #main-nav ul li a {
+    display: block;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    color: #626262;
+    font-size: 25px;
+ }
+ 
+ #main-nav ul li a:hover {
+    color: #9a2018;
+ }
+
+
+#logo img {
+    height: 80px;
+    margin-left: 0px;
+    position: absolute;
+    top: 15px;
+
+}
+
+nav button {
+    margin-left: 253px
+}
+
+#icons-nav {
+    display: none;
+}
+
+ /* INICIO */
+
+
+/* FIN */
+
+
+
+ /* Media Queries */
+
+ /* Burger Menu bug */
+
+ @media screen and (min-width: 375px) {
+    nav button {
+        margin-left: 300px;
+    }
+
+ }
+
+ @media screen and (min-width: 425px) {
+    nav button {
+        margin-left: 350px;
+    }
+
+ }
+
+ @media screen and (min-width: 460px) {
+    nav button {
+        margin-left: 420px;
+    }
+
+ }
+
+ @media screen and (min-width: 600px) {
+    nav button {
+        margin-left: 540px;
+    }
+
+ }
+
+ @media screen and (min-width: 680px) {
+    nav button {
+        margin-left: 595px;
+    }
+
+ }
+
+ @media screen and (min-width: 700px) {
+    nav button {
+        margin-left: 680px;
+    }
+
+ }
+
+
+@media screen and (min-width: 320px) {
+    #main-logo {
+        order: -1;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    #hero-txt-2 {
+        height: 50px;
+        margin-top: 80px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #squirrel {
+   order: -1;
+    }
+}
+
+
+/* 10. ---Tablet Sized Screens--- */
+
+@media screen and (min-width: 768px) {
+
+    #sticky-nav-con {
+       position: sticky;
+       background-color: #fff;
+       top: 0px;
+       border-bottom: solid 5px #862217;
+       z-index: 1; 
+       /* had to set z-index as css filters was causing images to overlap, see below */
+    }
+ 
+    #button {
+       display: none;
+    }
+ 
+    #logo img{
+       top: 30px;
+       order: -1;
+    }
+ 
+    #burger-con {
+       display: block;
+       font-size: 12px;
+       margin-bottom: 0px;
+       width: 360px;
+       padding-top: 10px;
+    }
+
+    #burger-con ul li a {
+        color: #FDBA43;
+        font-size: 15px;
+        cursor: pointer;
+     }
+
+
+     #burger-con ul li a img {
+        display: none;
+     }
+ 
+    #burger-con ul li, #burger-con ul li:first-child {
+       border: none;
+       display: inline;
+    }
+ 
+    #main-nav ul li a {
+       display: inline;
+    }
+ 
+    #burger-con ul li {
+       margin-right: 10px;
+       margin-top: 0px;
+    }
+ 
+    #burger-con ul li:last-child {
+       margin-right: 0;
+    }
+
+    #burger-menu {
+        padding-top: 30px;
+        width: 360px;
+    }
+
+    #main-nav {
+       margin-top: 4%;
+       margin-bottom: 5%;
+    }
+
+
+    #icons-nav {
+        display: block;
+        box-sizing: content-box;
+        grid-row: 1;
+        padding-top: 42px;
+    }
+
+    #icons-nav a .fa-solid, .fas {
+        font-size: 25px;
+        color: #86261A;
+        cursor: pointer;
+    }
+
+    #icons-nav a .fa-solid, .fas:first-of-type {
+        margin-right: 20px;
+    }
+ 
+    #book-now-header {
+       display: flex;
+       margin-right: -16px;
+    }
+ 
+    #book-now-hero {
+       display: none;
+    }
+ 
+    #hero-main {
+       height: 455px;
+    }
+ 
+    #booking-calendar {
+       display: block;
+       height: 200px;
+       background-color: #9a2018;
+       color: #fff;
+       padding: 30px 10px 20px 10px;
+       margin-top: 50px;
+    }
+
+    /* heree */
+ 
+    #booking-calendar h3 {
+       font-size: 12px;
+       margin-bottom: 10px;
+    }
+ 
+    #booking-calendar input[type="date"], #booking-calendar input[type="number"] {
+       padding: 4px;
+       border: 2px solid #d6d6d6;
+       background-color: #f7f7f7;
+       border-radius: 5px;
+       margin-bottom: 10px;
+       font: inherit;
+       width: 100%;
+    }
+ 
+    #booking-calendar input[type="submit"] {
+       padding: 12px 0 12px 0;
+       background: #CF6666;
+       color: #fff;
+       border: solid 2px #CF6666;
+       border-radius: 10px;
+       width: 100%;
+       font-size: 12px;
+       text-align: center;
+       transition: all 1s ease-in-out;
+    }
+ 
+    #booking-calendar input[type="submit"]:hover {
+       border: solid 2px #fff;
+    }
+ 
+    .hero-img-h2, .hero-img-h3 {
+       padding: 30px 15px;
+       font-size: 18px;
+    }
+    .hero-img-h2 span, .hero-img-h3 span {
+       font-size: 14px;
+    }
+ 
+    #contact {
+       line-height: 22px;
+       height: 214px;
+       padding-top: 60px;
+       font-size: 11px;
+    }
+ 
+    .fas {
+       font-size: 60px;
+    }
+ 
+    #why-choose-us-nav ul li {
+       display: inline;
+       margin-right: 30px;
+    }
+ 
+    #why-choose-us-nav {
+       margin-bottom: 30px;
+       margin-top: 30px;
+    }
+ 
+    #why-choose-us-nav ul li a.selected {
+       border-left: none;
+       border-bottom: 5px solid #9a2018;
+       padding-bottom: 25px;
+    }
+ 
+    #why-choose-us-hero {
+       height: 240px;
+    }
+ 
+    .why-choose-us-image {
+       float: none;
+       margin-right: 0px;
+       margin-top: 0px;
+       position: relative;
+    }
+ 
+    .why-choose-us-image span{
+       display: block;
+       position: absolute;
+       bottom: 30px;
+       right: 0px;
+       color: #fff;
+       font-size: 88px;
+    }
+ 
+    .why-choose-us-image-con h2 {
+       font-size: 22px;
+       margin-top: 0;
+       margin-bottom: 10px;
+    }
+ 
+    .why-choose-us-image-con h3 {
+       font-size: 16px;
+       margin-bottom: 20px;
+    }
+ 
+    .why-choose-us-image img {
+       filter: grayscale(100%);
+       z-index: -1;
+       /* set z-index lower so images don't overlap the nav
+       applying filters affects the browser painting order */
+       display: block;
+       /* the images were not fully filling the grid boxes, until I set them to block */
+    }
+ 
+    .why-choose-us-image-con {
+       margin-bottom: 30px;
+    }
+ 
+    #hot-tub p, #hot-tub a, #hot-tub h2 {
+       display: none;
+    }
+ 
+    #spa {
+       background-color: #626262;
+       color: #fff;
+       padding: 20px;
+    }
+ 
+    #spa p {
+       /* not supported in all browsers */
+       display: -webkit-box;
+       -webkit-line-clamp: 3;
+       -webkit-box-orient: vertical;  
+       text-overflow: ellipsis;
+       overflow: hidden;
+    }
+ 
+    #spa a {
+       color: #fff;
+       padding-bottom: 5px;
+    }
+ 
+    #spa a:hover {
+       border-bottom: solid 3px #9a2018;
+    }
+ 
+    #why-choose-us-bottom-nav {
+       display: none;
+    }
+ 
+    #why-choose-us {
+       margin-bottom: 80px;
+    }
+ 
+    .show-hide {
+       display: block;
+    }
+ 
+    #about-hero {
+       height: 240px;
+    }
+ 
+    #about-us-text {
+       column-count: 2;
+    }
+ 
+    #about-us-text-column1 {
+       margin-bottom: 80px;
+    }
+ 
+    #contact-hero {
+       height: 240px;
+    }
+    #contact-hero-text {
+       padding-top: 50px;
+       margin-top: 20px;
+    }
+ 
+    #faq-text-con  {
+       column-count: 2;
+       text-align: left;
+    }
+ 
+    #footer-nav {
+       display: block;
+    }
+ 
+    #footer-book-now {
+       display: flex;
+       height: 80px;
+       margin-top: 40px;
+    }
+ 
+    #footer-hero {
+       background-image: url(../images/footer-td.jpg);
+    }
+    
+    /*image switching for retina screens*/
+    
+    @media screen and (min-resolution: 200dpi),
+          screen and (min-resolution: 1.25dppx) {
+       #footer-hero {
+          background-image: url(../images/footer-td@2x.jpg);
+       }		  
+    }
+ 
+    #footer-nav {
+       margin-top: 40px;
+       column-count: 2;
+    }
+ 
+    #footer-nav ul {
+       list-style: none;
+       margin: 0;
+       padding: 0;
+    }
+ 
+    #footer-nav ul li a {
+       color: #fff;
+    }
+ 
+    #footer-nav ul li {
+       margin-bottom: 20px;
+    }  
+ 
+ }
+ 
+ /* 11. ---Desktop (1200px) Sized Screens */
+ 
+ @media screen and (min-width: 1200px) {
+    #main-header {
+       height: 110px;
+    }
+ 
+    #main-nav {
+       margin-top: 2%;
+       margin-bottom: 2%;
+       margin-left: 25px;
+    }
+ 
+    #burger-con ul li a{
+       font-size: 20px;
+    }
+ 
+    #burger-con {
+       margin-top: 28px;
+    }
+
+    #burger-menu {
+        width: 4500px;
+    }
+
+    #burger-menu li {
+        padding-right: 16px;
+     }
+
+    #icons-nav {
+        padding-top: 50px;
+    }
+
+    #icons-nav .fa-solid {
+        font-size: 30px;
+
+    }
+    
+    #logo img {
+        top: 40px;
+        height: 100px;
+    }
+
+ 
+    .book-now {
+       font-size: 18px;
+    }
+ 
+    #booking-calendar {
+       height: 234px;
+    }
+ 
+    #check-availability {
+       margin-top: 10px;
+    }
+ 
+    .hero-img-h2, .hero-img-h3 {
+       font-size: 24px;
+    }
+ 
+    .hero-img-h2 span, .hero-img-h3 span {
+       font-size: 16px;
+    }
+ 
+    .fas {
+       font-size: 90px;
+    }
+ 
+    .fa-mobile-alt {
+       margin-right: 40px;
+    }
+ 
+    .fa-map-marker-alt {
+       margin-right: 40px;
+    }
+ 
+    #why-choose-us-nav {
+       margin-top: 50px;
+       font-size: 24px;
+    }
+ 
+    #why-choose-us-hero {
+       height: 380px;
+    }
+ 
+    #spa p {
+       display: block;
+       -webkit-line-clamp: unset;
+       -webkit-box-orient: unset;
+       text-overflow: unset;
+       overflow: auto;
+    }
+ 
+    #why-choose-us-nav {
+       margin-top: 50px;
+       font-size: 24px;
+    }
+ 
+    #about-hero {
+       height: 380px;
+    }
+ 
+    #contact-hero {
+       height: 380px;
+    }
+ }

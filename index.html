@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <!-- in mobile set initial zoom level of page to 100%, set site size to equal device width not a larger canvas that is shrunk down-->
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
-    <title>Dr. Nut Responsive</title>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/c65e6bc5cc.js" crossorigin="anonymous"></script>
+    <title>Dr. Nut</title>
+    <link rel="icon" href="./images/icon.png" type="image/x-icon">
     <!-- Link to grid and main css -->
     <link href="css/grid.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
@@ -16,14 +20,36 @@
 </head>
 <body>
     <h1 class="hidden">Welcome to Dr.Nut Website</h1>
-    <header class="grid-con" id="main-header">
-        <nav class="box col-start-4 col-end-5 m-col-end-4 m-col-start-5 m-col-end-13
-        l-col-start-6 l-col-end-13" id="main-nav">nav</nav>
-        <div class="box col-start-1 col-end-3 m-col-start-2 m-col-end-5 l-start-end-2 l-col-end-4 xl-col-start-2 xl-col-end-3" id="main-logo">
-            Logo
-        </div>
-    </header>
+    <div id="sticky-nav-con">
+        <header class="grid-con" id="main-header">
+            <nav id="main-nav" class="col-span-full m-col-start-5 m-col-end-11">
+            <h2 class="hidden">Main Navigation</h2>
+                <button id="button"></button>
+                    <div id="burger-con">
+                        <ul id="burger-menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">Flavours</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">History</a></li>
+                            <li><a href="#"><img src="images/buy-now-btn.svg" alt="buy now"></a></li>
+                        </ul>
+                    </div>
+            </nav>
 
+            <div id="logo" class="col-span-full m-col-start-2 m-col-end-4">
+                <a href="index.html">
+                    <img src="images/logo.svg" alt="Dr.Nut Logo">
+                </a>
+            </div>
+
+            <div id="icons-nav" class="col-span-full m-col-start-11 m-col-end-13">
+                <a href="#"><i class="fa-solid fa-heart"></i></a>
+                <a><i class="fa-solid fa-user"></i></a>
+            </div>
+
+        </header>
+    </div>
     <main>
         <section class="grid-con" id="hero-con">
             <h2 class="hidden">Hero</h2>
