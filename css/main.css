@@ -45,7 +45,7 @@ body {
 }
 
 #hero-con {
-    background-color: #fff;
+    color: #fff;
 }
 
 #hero-con {
@@ -175,6 +175,33 @@ nav button {
     display: none;
 }
 
+
+/* Section 1 */
+
+
+/* Banner */
+
+#banner {
+    background-color: #862217;
+    color:#fff;
+    position: inherit;
+    border-top: 300px;
+}
+
+
+/* Hero */
+
+#hero-txt {
+    text-align: center;
+}
+
+#hero-txt h3 {
+    font-size: 25px;
+}
+
+#hero-txt h3 span{
+    color: #862217;
+}
 
 footer {
     border-color: #862217;
@@ -692,3 +719,12 @@ footer {
     }
 
  }
+#banner-t {
+    margin-top: 3.125rem;
+margin-bottom: 3.125rem;
+color: #F7B92E;
+font-style: italic;
+font-size: 1.7rem;
+white-space: nowrap;
+overflow: hidden;
+}
