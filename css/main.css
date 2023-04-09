@@ -81,7 +81,18 @@ section {
 }
 
 footer {
-    background-color: #E96329;
+    background-color: #862217;
+    display: inline-block;
+    color: #fff;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer img {
+    width: 150px;
+    text-align: center;
 }
 
 
@@ -162,6 +173,11 @@ nav button {
 
 #icons-nav {
     display: none;
+}
+
+
+footer {
+    border-color: #862217;
 }
 
  /* INICIO */
@@ -674,4 +690,5 @@ nav button {
     #contact-hero {
        height: 380px;
     }
+
  }
