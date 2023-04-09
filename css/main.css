@@ -50,6 +50,7 @@ body {
 
 #hero-con {
     background-color: #FDBA43;
+    background-image: url();
 }
 
 #hero-image {
@@ -197,10 +198,19 @@ nav button {
 
 #hero-txt h3 {
     font-size: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 #hero-txt h3 span{
     color: #862217;
+}
+
+#hero-btn a {
+    cursor: pointer;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    color: #fff;
+
 }
 
 footer {
