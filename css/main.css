@@ -50,7 +50,7 @@ body {
 
 #hero-con {
     background-color: #FDBA43;
-    background-image: url();
+    background-image: url(../images/bg.svg);
 }
 
 #hero-image {
@@ -165,6 +165,7 @@ footer img {
     margin-left: 0px;
     position: absolute;
     top: 15px;
+    z-index: 2;
 
 }
 
@@ -189,8 +190,17 @@ nav button {
     border-top: 300px;
 }
 
+#banner marquee {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
 
 /* Hero */
+
+#hero-con {
+    height: 550px;
+}
 
 #hero-txt {
     text-align: center;
@@ -213,6 +223,8 @@ nav button {
 
 }
 
+
+
 footer {
     border-color: #862217;
 }
@@ -228,16 +240,39 @@ footer {
 
  /* Burger Menu bug */
 
- @media screen and (min-width: 375px) {
+ @media screen and (min-width: 350px) {
     nav button {
         margin-left: 300px;
+    }
+
+    #hero-con {
+        height: 600px;
+    }
+
+    #hero-btn {
+        margin-top: 80px;
+        margin-bottom: 800px;
+    
+    }
+
+    #hero-txt h3 {
+        font-size: 30px;
     }
 
  }
 
  @media screen and (min-width: 425px) {
     nav button {
-        margin-left: 350px;
+        margin-left: 50px;
+    }
+
+    #hero-con {
+        height: 600px;
+    }
+
+    #hero-btn {
+        margin-top: 100px;
+    
     }
 
  }
@@ -247,11 +282,39 @@ footer {
         margin-left: 420px;
     }
 
+    #hero-con {
+        height: 750px;
+    }
+
+    #hero-btn {
+        margin-top: 230px;
+    }
+
+ }
+
+ @media screen and (min-width: 520px) {
+    nav button {
+        margin-left: 420px;
+    }
+
+    #hero-con {
+        height: 850px;
+    }
+
+    #hero-btn {
+        margin-top: 330px;
+        margin-bottom: 530px;
+    }
+
  }
 
  @media screen and (min-width: 600px) {
     nav button {
         margin-left: 540px;
+    }
+
+    #hero-txt h3 {
+        font-size: 40px;
     }
 
  }
@@ -266,6 +329,19 @@ footer {
  @media screen and (min-width: 700px) {
     nav button {
         margin-left: 680px;
+    }
+
+    #hero-con {
+        height: 950px;
+    }
+
+    #hero-btn {
+        margin-top: 390px;
+        margin-bottom: 530px;
+    }
+
+    #hero-txt h3 {
+        font-size: 50px;
     }
 
  }
