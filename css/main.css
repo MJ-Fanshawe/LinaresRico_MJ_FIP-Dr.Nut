@@ -187,13 +187,32 @@ nav button {
     background-color: #862217;
     color:#fff;
     position: inherit;
-    border-top: 300px;
+    border-top: 100px;
+    padding: 0;
+    font-size: 25px;
 }
 
-#banner marquee {
-    margin-top: 10px;
-    margin-bottom: 5px;
+
+
+.marquee {
+    width: 2050px;
+    line-height: 50px;
+    background-color: red;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
 }
+.marquee p {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 25s linear infinite;
+}
+@keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+
 
 
 /* Hero */
@@ -210,15 +229,27 @@ nav button {
     font-size: 25px;
     padding-top: 20px;
     padding-bottom: 20px;
+
 }
 
-#hero-txt h3 span{
+#hero-txt h3 span:last-of-type{
     color: #862217;
 }
 
-#hero-btn a {
+#hero-txt h3 span:first-of-type{
+    color: white;
+    -webkit-text-stroke: 1px #862217;
+}
+
+#hero-btn {
     cursor: pointer;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
+    color: #fff;
+
+}
+
+#hero-btn a {
+
     color: #fff;
 
 }
@@ -263,7 +294,7 @@ footer {
 
  @media screen and (min-width: 425px) {
     nav button {
-        margin-left: 50px;
+        margin-left: 340px;
     }
 
     #hero-con {
@@ -279,7 +310,7 @@ footer {
 
  @media screen and (min-width: 460px) {
     nav button {
-        margin-left: 420px;
+        margin-left: 390px;
     }
 
     #hero-con {
@@ -294,7 +325,7 @@ footer {
 
  @media screen and (min-width: 520px) {
     nav button {
-        margin-left: 420px;
+        margin-left: 450px;
     }
 
     #hero-con {
@@ -310,7 +341,7 @@ footer {
 
  @media screen and (min-width: 600px) {
     nav button {
-        margin-left: 540px;
+        margin-left: 620px;
     }
 
     #hero-txt h3 {
@@ -319,16 +350,10 @@ footer {
 
  }
 
- @media screen and (min-width: 680px) {
-    nav button {
-        margin-left: 595px;
-    }
-
- }
 
  @media screen and (min-width: 700px) {
     nav button {
-        margin-left: 680px;
+        margin-left: 690px;
     }
 
     #hero-con {
@@ -355,16 +380,35 @@ footer {
 
 
 @media screen and (min-width: 768px) {
-    #hero-txt-2 {
-        height: 50px;
-        margin-top: 80px;
-    }
-}
-
-@media screen and (min-width: 768px) {
     #squirrel {
    order: -1;
     }
+}
+
+@media screen and (min-width: 900px) {
+    nav button {
+       margin-left: 540px;
+    }
+
+    #hero-con {
+        height: 600px;
+    }
+
+    #hero-img img {
+        width: 400px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #hero-btn {
+       margin-left: 200px;
+    }
+
+    #hero-con {
+        height: 1500px;
+    }
+    
+
 }
 
 
@@ -454,15 +498,7 @@ footer {
     #icons-nav a .fa-solid, .fas:first-of-type {
         margin-right: 20px;
     }
- 
-    #book-now-header {
-       display: flex;
-       margin-right: -16px;
-    }
- 
-    #book-now-hero {
-       display: none;
-    }
+
  
     #hero-main {
        height: 455px;
@@ -477,7 +513,45 @@ footer {
        margin-top: 50px;
     }
 
-    /* heree */
+    /* Hero */
+
+    #hero-txt h3 {
+        padding-top: 40px;
+    }
+
+    #hero-con {
+        height: 500px;
+    }
+
+    #hero-btn {
+        margin-top: 25px;
+        margin-left: 30px;
+        width: 200px;
+    }
+
+    #hero-image img {
+        margin-top: 25px;
+        height: 415px;
+    }
+
+    #hero-txt h3 {
+        margin-top: 50px;
+    }
+
+    nav button {
+        margin-left: 420px;
+    }
+
+    #hero-con {
+        height: 550px;
+    }
+
+    #hero-btn {
+        width: 150px;
+        margin-left: 100px;
+        margin-top: 40px;
+        border-bottom: 40px;
+    }
  
     #booking-calendar h3 {
        font-size: 12px;
@@ -697,6 +771,7 @@ footer {
     }  
  
  }
+ 
  
  /* 11. ---Desktop (1200px) Sized Screens */
  
