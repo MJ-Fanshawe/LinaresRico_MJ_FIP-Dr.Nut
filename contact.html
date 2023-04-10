@@ -28,11 +28,11 @@
                     <div id="burger-con">
                         <ul id="burger-menu">
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="#">Flavours</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">History</a></li>
-                            <li><a href="#"><img src="images/buy-now-btn.svg" alt="buy now"></a></li>
+                            <li><a href="flavours.html">Flavours</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="error404.html">About Us</a></li>
+                            <li><a href="error404.html">History</a></li>
+                            <li><a href="flavours.html"><img src="images/buy-now-btn.svg" alt="buy now"></a></li>
                         </ul>
                     </div>
             </nav>
@@ -50,47 +50,24 @@
 
         </header>
     </div>
-    <main>
-        <section class="grid-con" id="hero-con">
-            <h2 class="hidden">Hero</h2>
-            
-            <div class="box col-start-2 col-end-4 m-col-start-2 m-col-end-6" id="hero-txt-1">Text</div>
-            <div class="box col-span-full m-col-start-1 m-col-end-7" id="hero-txt-2">Text</div>
+    <main class="grid-con" id="form">
 
-            <div class="box col-span-full m-col-start-7 m-col-end-12 " id="hero-image">Hero Image</div>
+        <!-- <section class="grid-con">
+            <img src="/images/questions.png" alt="">
+        </section> -->
 
-            <div class="box col-start-2 col-end-4" id="hero-btn">Button</div>
-        </section>
+        <img src="./images/icon-form.svg" alt="Paper Airplane ">
 
-        <section class="grid-con" id="ingredients">
-            <h2 class="hidden">Ingredients</h2>
-            <div class="box col-start-2 col-end-4
-            m-col-start-2 m-col-end-5
-            l-col-start-2 l-col-end-5" id="squirrel">Squirrel</div>
-            <div class="box col-start-1 col-end-5
-            m-col-start-5 m-col-end-11
-            l-col-start-6 l-col-end-11" id="squirrel-txt">Dialog Box Text</div>
-
-            <div class="box col-span-2 m-col-span-3 ">Vector</div>
-            <div class="box col-span-2 m-col-span-3 ">Vector</div>
-            <div class="box col-span-2 m-col-span-3 ">Vector</div>
-            <div class="box col-span-2 m-col-span-3 ">Vector</div>
-        </section>
-
-        <section class="grid-con" id="recycle">
-            <h2 class="hidden">Recycle Can</h2>
-            <div class="box col-start-1 col-end-5
-            m-col-start-2 m-col-end-12
-            l-col-start-1 l-col-end-7" id="recycle-can">Recycle Can Image</div>
-
-            <div class="box col-start-2 col-end-4 m-col-start-4 m-col-end-10 l-col-start-7 l-col-end-12">Text</div>
-            <div class="box col-span-full l-col-start-7 l-col-end-12">Text</div>
-        </section>
-
-        <section class="grid-con" id="video">
-            <h2 class="hidden">Video</h2>
-            <div class="box col-span-full
-            l-col-start-1 l-col-end-13">Video</div>
+        <section id="contact-form" class="col-start-1 col-end-5 m-col-start-3 m-col-end-11">
+            <h2 class="hidden">Form</h2>
+            <p class="ma-1-em">Feel Free to Email Us Anytime Soon!</p>
+            <form action="#" class="mb-2-em">
+                <input type="text" id="name" name="name" placeholder="Name"/>
+                <input type="text" id="email" name="email" placeholder="Your email"/>
+                <input type="text" id="subject" name="subject" placeholder="Subject"/>
+                <textarea id="message" name="message" cols="48" rows="10" placeholder="Your message"></textarea>
+                <input type="submit" id="btn-submit" name="btn-sumbmit" value="SEND" class="brown-button blue-button"/>
+            </form>
         </section>
     </main>
 

@@ -39,9 +39,27 @@ input, textarea {
 
 /* General */
 
-body {
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
+.brown-button {
+   display: block;
+   width: 160px;
+   padding: 15px;
+   text-align: center;
+   margin: auto;
+   text-decoration: none;
+   border: none;
+   border-radius: 29px;
+   background-color: #52130C;
+   color:#f5f5f5;
+   font-family: 'Poppins', sans-serif, serif;
+}
+
+.brown-button:hover {
+   background-color: #e37a3b;
+}
+
+.ma-1-em {
+   margin: 0.5em;
+   font-size: 1.2em;
 }
 
 #hero-con {
@@ -55,10 +73,6 @@ body {
 
 #hero-image {
     height: 273px;
-}
-
-#ingredients {
-    background-color: #E96329;
 }
 
 section {
@@ -94,6 +108,7 @@ footer p {
 footer img {
     width: 150px;
     text-align: center;
+    padding-top: 20px;
 }
 
 
@@ -254,20 +269,114 @@ nav button {
 
 }
 
+/* Ingredients Section */
+
+#ingredients {
+    background-color: #fff;
+    background-image: url(../images/bg_2.png);
+
+}
+
+/* Footer  */
+
 
 
 footer {
     border-color: #862217;
 }
 
- /* INICIO */
+
+
+ /* CONTACT PAGE */
+
+ #form img {
+   width: 100px;
+    margin-left: 100px;
+    position: absolute;
+    top: 220px;
+    text-align: center;
+ }
+
+ #form {
+   padding-top: 80px;
+   padding-bottom: 80px;
+   background-repeat: no-repeat;
+   background-color: #f47641; 
+}
+
+#contact-form form input{
+   width: 150px;
+
+}
+
+ #contact-form {
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+   color: #db434a;
+   background-color: #862217;
+   border-radius: 60px;
+   background-image: url(../images/bubbles.svg);
+}
+
+#form {
+   padding-top: 200px;
+}
+
+#contact-form input[type=text],
+#contact-form textarea {
+   margin: auto;
+   margin-bottom: 2em;
+   padding: 2em;
+   border-radius: 3em;
+   border: 2px solid #ee6363;
+   width: 230px;
+   color: #db434a;
+   transition: all ease-in .3s;
+   font-family: 'Poppins', sans-serif, serif;
+   font-size: 1em;
+   text-align: center;
+}
+
+#contact-form input[type=text]:hover,
+#contact-form textarea:hover {
+   border-color: #db434a;
+}
+
+#contact-form p {
+   font-family: 'Poppins', sans-serif, serif;
+   color: #fff;
+   text-align: center;
+   padding-top: 50px;
+   padding-bottom: 20px;
+}
+
+/* 404 PAGE */
+
+#error-con {
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+   color: #db434a;
+   background-color: #862217;
+   background-image: url(../images/bubbles.svg);
+}
+
+#error-txt {
+   font-size: 60px;
+   padding-top: 50px;
+}
+
+#error-btn a {
+   color: #fff;
+}
 
 
 /* FIN */
 
 
 
- /* Media Queries */
+ /* 1. ---Custom Queries--- */
 
  /* Burger Menu bug */
 
@@ -290,6 +399,10 @@ footer {
         font-size: 30px;
     }
 
+    #form img {
+       margin-left: 120px;
+    }
+
  }
 
  @media screen and (min-width: 425px) {
@@ -304,6 +417,9 @@ footer {
     #hero-btn {
         margin-top: 100px;
     
+    }
+    #form img {
+       margin-left: 160px;
     }
 
  }
@@ -320,6 +436,9 @@ footer {
     #hero-btn {
         margin-top: 230px;
     }
+    #form img {
+      margin-left: 180px;
+   }
 
  }
 
@@ -337,16 +456,24 @@ footer {
         margin-bottom: 530px;
     }
 
+    #form img {
+      margin-left: 200px;
+   }
+
  }
 
  @media screen and (min-width: 600px) {
     nav button {
-        margin-left: 620px;
+        margin-left: 520px;
     }
 
     #hero-txt h3 {
         font-size: 40px;
     }
+
+    #form img {
+      margin-left: 250px;
+   }
 
  }
 
@@ -368,6 +495,10 @@ footer {
     #hero-txt h3 {
         font-size: 50px;
     }
+
+    #form img {
+      margin-left: 300px;
+   }
 
  }
 
@@ -397,6 +528,10 @@ footer {
     #hero-img img {
         width: 400px;
     }
+
+    #form img {
+      margin-left: 650px;
+   }
 }
 
 @media screen and (min-width: 1000px) {
@@ -407,6 +542,7 @@ footer {
     #hero-con {
         height: 1500px;
     }
+
     
 
 }
@@ -768,7 +904,35 @@ footer {
  
     #footer-nav ul li {
        margin-bottom: 20px;
-    }  
+    } 
+
+
+    /* Contact Page */
+
+
+    #contact-form input[type=text],
+      #contact-form textarea {
+         margin: auto;
+         margin-bottom: 2em;
+         padding: 2em;
+         border-radius: 3em;
+         border: 2px solid #ee6363;
+         width: 400px;
+         color: #db434a;
+         transition: all ease-in .3s;
+         font-family: 'Poppins', sans-serif, serif;
+         font-size: 1em;
+         text-align: center;
+      }
+
+       #form img {
+      margin-left: 385px;
+      }
+
+      /* ERROR PAGE */
+
+
+
  
  }
  
@@ -879,13 +1043,12 @@ footer {
        height: 380px;
     }
 
+     #form img {
+      margin-left: 520px;
+      margin-top: 0px;
+      width: 150px;
+   }
+
  }
-#banner-t {
-    margin-top: 3.125rem;
-margin-bottom: 3.125rem;
-color: #F7B92E;
-font-style: italic;
-font-size: 1.7rem;
-white-space: nowrap;
-overflow: hidden;
-}
+
+ /* Form */
